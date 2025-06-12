@@ -10,14 +10,17 @@
   <style>
 	.header-image {
 	  background-image: url('./images/img_header.jpg');
+	  background-size: cover; /* couvre tout l’espace sans déformer */
+	  background-position: center; /* centre horizontalement et verticalement */
+	  background-repeat: no-repeat; /* évite les répétitions */
 	  min-height: 300px;
+	  height: 40vh; /* hauteur dynamique mais raisonnable */
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: center;
-	  align-items: bottom;
-	  background-position-y: center;
+	  align-items: center; /* modifié de bottom à center */
+	  text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* pour la lisibilité du texte */
 	}
-
 	.nav-link {
 	color: white;
 	}
